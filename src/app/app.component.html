@@ -1,0 +1,18 @@
+<body class="body">
+  <div class="wrapper">
+    <button
+      [disabled]="counter < 3 ? 'disabled' : null"
+      (click)="decresase3Bnt()"
+      class="button decrease"
+    >
+      Button A Decrease 3
+    </button>
+    <div class="txt-container">
+      <h1 class="text">Counter {{ counter }}</h1>
+    </div>
+
+    <button (click)="increase2Bnt()" class="button increase">
+      Button B Increase 2
+    </button>
+  </div>
+</body>
